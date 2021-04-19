@@ -68,7 +68,11 @@
         } else {
             $decoded = json_decode($response);
             $result = $decoded->data->url;
-            echo '<EMBED SRC="' . $result . '" HIDDEN="TRUE" AUTOSTART="TRUE"></EMBED>';
+                        echo '<div class="container">
+                <audio controls="controls">
+                    <source src="' . $result . '" type="audio/mpeg">
+                </audio>
+            </div>';
         }
 
         curl_close($ch);
