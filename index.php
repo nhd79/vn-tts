@@ -15,8 +15,7 @@
         <form action="" method="post">
             Chuyển ký tự thành giọng nói sử dụng Zalo AI
             <br><br>
-            <textarea id="input" name="input" rows="5" cols="40"><?php if (isset($_POST['input'])) echo $_POST['input']; ?>
-            </textarea>
+            <textarea id="input" name="input" rows="5" cols="40"><?php if (isset($_POST['input'])) echo $_POST['input']; ?></textarea>
 
             <br><br>Tốc độ:
             <select name="speed">
